@@ -1,0 +1,49 @@
+[
+  {
+    "prompt_inputs": {
+      "height": "180 cm",
+      "weight": "72 kg",
+      "goal": "Marathon preparation with carbohydrate loading for sustained endurance energy",
+      "restrictions": "No shellfish allergy"
+    },
+    "solution_criteria": [
+      "Meal plan totals 3000+ calories with carbohydrates comprising 55-65% of total calories",
+      "Includes 4-5 meals/snacks distributed throughout the day for sustained energy",
+      "Features easily digestible, carbohydrate-rich foods suitable for endurance athletes"
+    ],
+    "task_description": "Write a compact ,concise 1 day meal plan for a single athelete ",
+    "scenario": "Testing with a high-endurance athlete (marathon runner) requiring 3000+ calories with emphasis on carbohydrate loading and sustained energy"
+  },
+  {
+    "prompt_inputs": {
+      "height": "180 cm",
+      "weight": "90 kg",
+      "goal": "Muscle gain and strength improvement with recovery optimization",
+      "restrictions": "None"
+    },
+    "solution_criteria": [
+      "Meal plan covers all 3 meals and includes 2-3 snacks distributed throughout the day",
+      "Total daily protein meets or exceeds 135g (1.5g per kg bodyweight)",
+      "Macronutrient distribution supports strength training with balanced carbohydrates and healthy fats",
+      "Includes specific meal timing recommendations around workout for recovery"
+    ],
+    "task_description": "Write a compact ,concise 1 day meal plan for a single athelete ",
+    "scenario": "Testing with a strength-based athlete (weightlifter) requiring balanced macros with high protein intake (1.5g+ per lb bodyweight) and recovery nutrition"
+  },
+  {
+    "prompt_inputs": {
+      "height": "178 cm",
+      "weight": "75 kg",
+      "goal": "Maintain muscle mass while cutting weight for competition (target: under 2000 calories/day)",
+      "restrictions": "No dairy, high protein requirement"
+    },
+    "solution_criteria": [
+      "Total daily calories do not exceed 2000 kcal",
+      "Protein content supports muscle maintenance (minimum 1.6g per kg body weight)",
+      "Meal plan is compact and covers all three meals with timing suitable for training",
+      "All meals comply with dairy-free restriction"
+    ],
+    "task_description": "Write a compact ,concise 1 day meal plan for a single athelete ",
+    "scenario": "Testing with a weight-conscious athlete (boxer/wrestler) requiring calorie-controlled meals under 2000 calories while maintaining muscle mass and performance nutrients"
+  }
+]

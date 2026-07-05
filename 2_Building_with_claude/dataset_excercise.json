@@ -1,0 +1,39 @@
+[
+  {
+    "prompt_inputs": {
+      "content": "We conducted a double-blind randomized controlled trial with 450 participants stratified by age and comorbidity status. Subjects were assigned to either the intervention group receiving a novel pharmacological agent or the control group receiving placebo over a 24-week period. Primary outcomes were assessed using validated clinical scales administered by blinded assessors, while secondary outcomes included biomarker analysis via mass spectrometry. Statistical analysis employed intention-to-treat methodology with multiple imputation for missing data, and we controlled for baseline imbalances using analysis of covariance."
+    },
+    "solution_criteria": [
+      "Must extract explicit topics directly mentioned (e.g., 'randomized controlled trial', 'pharmacological agent', 'biomarker analysis')",
+      "Must infer and extract implicit/abstract topics not directly stated (e.g., 'research methodology', 'clinical study design', 'statistical analysis')",
+      "Output must be a valid JSON array of strings",
+      "Should demonstrate topic abstraction beyond surface-level terminology"
+    ],
+    "task_description": "Extract topics out of a passage from a schlarly article into a JSON array of strings",
+    "scenario": "Testing with a passage containing implicit topics that require inference rather than explicit mentions (e.g., a passage about 'double-blind randomized trials' should extract 'research methodology' even if not directly stated) to assess topic abstraction capabilities"
+  },
+  {
+    "prompt_inputs": {
+      "content": "Recent advances in cognitive neuropharmacology have illuminated the complex interplay between dopaminergic signaling and behavioral reinforcement. Neuroimaging studies utilizing fMRI reveal that selective serotonin reuptake inhibitors (SSRIs) modulate activity in the prefrontal cortex and amygdala, regions critical for emotional regulation and fear extinction. Simultaneously, psychopharmacological research demonstrates that these neurochemical changes correlate with improved therapeutic outcomes in anxiety disorders, though the precise mechanisms linking synaptic dopamine concentrations to psychological symptom relief remain incompletely understood. Furthermore, emerging evidence suggests that individual differences in cytochrome P450 enzyme expression\u2014a pharmacogenomic consideration\u2014significantly influence medication metabolism and clinical response, necessitating personalized treatment approaches that integrate neuroscientific, psychological, and pharmacological perspectives."
+    },
+    "solution_criteria": [
+      "Extracts all distinct subject areas (neuroscience, psychology, pharmacology, and pharmacogenomics) as separate topics without conflation",
+      "Distinguishes between related but distinct concepts (e.g., neuroimaging as a method vs. dopaminergic signaling as a topic)",
+      "Returns output as a valid JSON array of strings with no duplicates"
+    ],
+    "task_description": "Extract topics out of a passage from a schlarly article into a JSON array of strings",
+    "scenario": "Testing with a dense interdisciplinary passage containing overlapping topics (e.g., neuroscience, psychology, and pharmacology) to evaluate if the prompt can distinguish and separately extract related but distinct subject areas"
+  },
+  {
+    "prompt_inputs": {
+      "content": "Recent advances in CRISPR-Cas9 gene editing have revolutionized therapeutic approaches to genetic disorders. The technique enables precise DNA modifications through RNA-guided nuclease activity, facilitating targeted disruption or correction of disease-associated alleles. Complementary epigenetic modifications, including histone acetylation and DNA methylation patterns, regulate gene expression without altering the underlying genomic sequence. RNA sequencing (RNA-seq) has become instrumental in validating these modifications, providing comprehensive transcriptome-wide analysis of expression changes. Furthermore, integration of machine learning algorithms with high-throughput screening platforms accelerates the identification of optimal off-target profiles and phenotypic outcomes in cellular models."
+    },
+    "solution_criteria": [
+      "All major topics are extracted, including both primary concepts (CRISPR-Cas9, epigenetic modifications, RNA sequencing) and supporting methodologies (machine learning, high-throughput screening)",
+      "Acronyms and abbreviated terms (CRISPR-Cas9, RNA-seq) are correctly recognized and included as distinct topics",
+      "Output is formatted as a JSON array of strings"
+    ],
+    "task_description": "Extract topics out of a passage from a schlarly article into a JSON array of strings",
+    "scenario": "Testing with a passage containing specialized jargon, abbreviations, and domain-specific terminology (e.g., 'CRISPR-Cas9', 'RNA sequencing', 'epigenetic modifications') to verify the prompt correctly identifies topics despite technical complexity and acronyms"
+  }
+]
