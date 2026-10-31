@@ -1,0 +1,22 @@
+# Python bytecode
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+.venv/
+env/
+venv/
+ENV/
+.env 
+
+# FastAPI / Uvicorn
+*.log
+*.db
+*.sqlite3
+
+# Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
