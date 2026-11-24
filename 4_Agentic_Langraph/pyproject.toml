@@ -1,17 +1,15 @@
 [project]
-name = "4-agentic-langraph"
+name = "agenticlanggraph"
 version = "0.1.0"
 description = "Add your description here"
 readme = "README.md"
-requires-python = ">=3.12"
+requires-python = ">=3.13"
 dependencies = [
-    "langchain>=1.3.14",
-    "langchain-groq>=1.1.3",
-    "langchain-mcp-adapters>=0.3.0",
-    "langchain-openai>=1.3.5",
-    "langchain-tavily>=0.2.18",
-    "langgraph>=1.2.9",
-    "langsmith>=0.10.6",
-    "mcp>=1.28.1",
-    "python-dotenv>=1.2.2",
+    "ipykernel>=6.29.5",
+    "langchain>=0.3.25",
+    "langchain-groq>=0.3.2",
+    "langchain-tavily>=0.2.3",
+    "langgraph>=0.4.8",
+    "langsmith>=0.3.45",
+    "python-dotenv>=1.1.0",
 ]

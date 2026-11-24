@@ -4,6 +4,3 @@ langsmith
 python-dotenv
 langchain-groq 
 langchain_tavily
-langchain-openai 
-mcp
-langchain-mcp-adapters
